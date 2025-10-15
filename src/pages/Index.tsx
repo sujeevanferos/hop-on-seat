@@ -17,14 +17,16 @@ const Index = () => {
   const [to, setTo] = useState("");
 
   const cities = [
-    "Dhaka",
-    "Chittagong",
-    "Sylhet",
-    "Rajshahi",
-    "Khulna",
-    "Barishal",
-    "Rangpur",
-    "Mymensingh",
+    "Colombo",
+    "Kandy",
+    "Galle",
+    "Jaffna",
+    "Trincomalee",
+    "Anuradhapura",
+    "Matara",
+    "Negombo",
+    "Batticaloa",
+    "Nuwara Eliya",
   ];
 
   const handleSearch = () => {

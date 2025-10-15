@@ -8,11 +8,11 @@ import { toast } from "sonner";
 // Mock bus data
 const mockBus = {
   id: 1,
-  company: "Green Line",
-  from: "Dhaka",
-  to: "Chittagong",
+  company: "Sri Lanka Transport Board",
+  from: "Colombo",
+  to: "Kandy",
   departureTime: "8:00 AM",
-  price: 800,
+  price: 450,
 };
 
 type SeatStatus = "available" | "booked" | "pending";
@@ -72,7 +72,7 @@ const SeatSelection = () => {
       return;
     }
     toast.success(
-      `Successfully booked ${selectedSeats.length} seat(s)! Total: ৳${
+      `Successfully booked ${selectedSeats.length} seat(s)! Total: Rs. ${
         selectedSeats.length * mockBus.price
       }`
     );
@@ -197,7 +197,7 @@ const SeatSelection = () => {
               <div className="flex justify-between items-center">
                 <p className="text-xl md:text-2xl font-semibold">Total Price:</p>
                 <p className="text-2xl md:text-3xl font-bold text-primary">
-                  ৳{totalPrice}
+                  Rs. {totalPrice}
                 </p>
               </div>
               <Button

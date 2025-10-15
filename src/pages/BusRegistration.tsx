@@ -120,7 +120,7 @@ const BusRegistration = () => {
                 type="tel"
                 value={formData.contactNumber}
                 onChange={(e) => handleChange("contactNumber", e.target.value)}
-                placeholder="01711-123456"
+                placeholder="077-123-4567"
                 className="h-12 md:h-14 text-lg"
                 required
               />
@@ -150,7 +150,7 @@ const BusRegistration = () => {
                 id="busNumber"
                 value={formData.busNumber}
                 onChange={(e) => handleChange("busNumber", e.target.value)}
-                placeholder="DHA-1234"
+                placeholder="CMB-1234"
                 className="h-12 md:h-14 text-lg"
               />
             </div>
@@ -184,7 +184,7 @@ const BusRegistration = () => {
                 id="route"
                 value={formData.route}
                 onChange={(e) => handleChange("route", e.target.value)}
-                placeholder="e.g., Dhaka - Chittagong"
+                placeholder="e.g., Colombo - Kandy"
                 className="h-12 md:h-14 text-lg"
               />
             </div>

@@ -7,35 +7,35 @@ import { Bus, Clock, Phone, DollarSign, ArrowLeft } from "lucide-react";
 const mockBuses = [
   {
     id: 1,
-    company: "Green Line",
-    from: "Dhaka",
-    to: "Chittagong",
+    company: "Sri Lanka Transport Board",
+    from: "Colombo",
+    to: "Kandy",
     departureTime: "8:00 AM",
-    arrivalTime: "2:00 PM",
-    price: 800,
-    contact: "01711-123456",
+    arrivalTime: "11:30 AM",
+    price: 450,
+    contact: "077-123-4567",
     availableSeats: 15,
   },
   {
     id: 2,
-    company: "Shyamoli Paribahan",
-    from: "Dhaka",
-    to: "Chittagong",
+    company: "Intercity Express",
+    from: "Colombo",
+    to: "Kandy",
     departureTime: "10:30 AM",
-    arrivalTime: "4:30 PM",
-    price: 750,
-    contact: "01722-234567",
+    arrivalTime: "2:00 PM",
+    price: 500,
+    contact: "076-234-5678",
     availableSeats: 8,
   },
   {
     id: 3,
-    company: "Ena Transport",
-    from: "Dhaka",
-    to: "Chittagong",
+    company: "Highway Bus Service",
+    from: "Colombo",
+    to: "Kandy",
     departureTime: "2:00 PM",
-    arrivalTime: "8:00 PM",
-    price: 850,
-    contact: "01733-345678",
+    arrivalTime: "5:30 PM",
+    price: 480,
+    contact: "075-345-6789",
     availableSeats: 22,
   },
 ];
@@ -113,7 +113,7 @@ const BusList = () => {
                       <span className="text-lg">Ticket Price</span>
                     </div>
                     <p className="text-2xl md:text-3xl font-bold text-foreground">
-                      ৳{bus.price}
+                      Rs. {bus.price}
                     </p>
                     <p className="text-lg text-muted-foreground">
                       Per person
